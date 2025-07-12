@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./icons/Logo.png">
+    <link rel="stylesheet" type="text/css" href="log-in-styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- display of link shared in facebook-->
+        <meta property="og:title" content="Divinstagram" />
+        <meta property="og:description" content="Dedicated as bday gift :>" />
+        <meta property="og:site_name" content="Divinstagram" />
+        <meta property="og:image" content="https://chicomacchiato.github.io/Divinstagram/icons/Logo.png" />
+        <meta property="og:image:secure_url" content="https://chicomacchiato.github.io/Divinstagram/" />
+    <title>Divinstagram</title>
+</head>
+<body>
+    <div class="mobileFrame">
+        <div class="topmenu">
+            <div class="webName">
+                <div class="logo"><img  src="./icons/Logo.png" height="50"></div>
+                <h3>Divinstagram</h3>
+            </div>
+        </div>
+
+        <div class="login-container">
+            <div class="profile">
+                <img src="./gallery/profile.png">
+            </div>
+
+            <form id="loginForm">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="6 Digit code" required>
+            
+                <button type="submit">Login</button>
+            </form>
+
+        
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="log-in.js"></script>
+</body>
+</html>

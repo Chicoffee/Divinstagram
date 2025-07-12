@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Protect page -->
+    <script>
+        if (localStorage.getItem("authenticated") !== "true") {
+            window.location.href = "index.html";
+        }
+    </script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./icons/Logo.png">
+	<link rel="stylesheet" href="profile-card.css">
+	<link rel="stylesheet" href="popup.css">
+	<script type="text/javascript" src="profile-card.js"></script>
+	<script type="text/javascript" src="grid.js"></script>
+
+	    <!-- display of link shared in facebook-->
+	<meta property="og:title" content="Divinstagram" />
+	<meta property="og:description" content="Dedicated as bday gift :>" />
+    <meta property="og:site_name" content="Divinstagram" />
+    <meta property="og:image" content="https://chicomacchiato.github.io/Divinstagram/icons/Logo.png" />
+    <meta property="og:image:secure_url" content="https://chicomacchiato.github.io/Divinstagram/icons/logo.png" />
+    <meta property="og:type" content="website"/>
+    <meta property="url" content="https://chicomacchiato.github.io/Divinstagram/" />
+	<title>Divinstagram</title>
+</head>
+<body>
+	<!-----------------------Profile Card-------------------------->
+	<div class="mobileframe">
+	<div class="topmenu">
+		<div class="username">
+			<div class="lock"><img	src="./icons/lock.png" height="35">
+			</div>
+			<h3>dmct24</h3>
+		</div>
+		<div class="downarrow">
+			<img src="./icons/down-arrow.png" height="35">
+		</div>
+
+		<div class="rtopmenu">
+			<div class="addicon"><img src="./icons/more.png" height="35"></div>
+			<div class="burger"><img src="./icons/burger-bar.png" height="35" onclick="togglePopup('popup-12')"></div>
+	</div>
+	</div>
+
+	<div class="profile">
+		<div class="image"><img src="./gallery/profile.png"></div>
+		<div class="profile-stat">
+			<div class="display-name">
+				<p>D</p>
+			</div>
+			<div class="align">
+				<div class="pc"><h5>0</h5><p>Posts</p></div>
+				<div class="fc"><h5>127</h5><p>Followers</p></div>
+				<div class="fgc"><h5>45</h5><p>Following</p></div>
+			</div>
+		</div>
+	</div>
+	<div class="bio">
+    <div class="biobody">
+        <p><span style="color: royalblue;">@dvn_mrc</span><br>gaunsa ka diri?<!--<br>
+        <span style="color: royalblue;">ngl.link/dm88268</span>-->
+        </p>
+    </div>
+</div>
+
+	<div class="settings">
+		<div class="editprofile"><p>Edit profile</p></div>
+		<div class="shareprofile"><p>Share profile</p></div>
+		<div class="addfriend"><img	src="./icons/invite.png" height="15"></div>
+	</div>
+
+	<div class="highlight">
+		<div class="hg1"><img src="" onclick="togglePopup('popup-12')"></div>
+	</div>
+
+	<div class="prt" height="75">
+    <div class="grid" id="grid-toggle"><img src="./icons/grid.png" height="25"></div>
+    <div class="reel" id="video-toggle"><img src="./icons/video.png" height="25"></div>
+    <div class="grid"><img src="./icons/tag.png" height="30"></div>
+</div>
+
+<!-- Grid 1 (Images) -->
+<div class="gallery" id="image-grid">
+    <div class="box"><img src="./gallery/Ate Nanet.jpg" onclick="togglePopup('popup-2')"></div>
+    <div class="box"><img src="./gallery/cly.png" onclick="togglePopup('popup-3')"></div>
+    <div class="box"><img src="./gallery/tj.png" onclick="togglePopup('popup-4')"></div>
+    <div class="box"><img src="./gallery/Injel.png" onclick="togglePopup('popup-5')"></div>
+    <div class="box"><img src="./gallery/Mirae_ee__.png" onclick="togglePopup('popup-6')"></div>
+    <div class="box"><img src="./gallery/Mawi_zel.png" onclick="togglePopup('popup-7')"></div>
+    <div class="box"><img src="./gallery/diana.jpg" onclick="togglePopup('popup-9')"></div>
+    <div class="box"><img src="./gallery/lei.png" onclick="togglePopup('popup-10')"></div>
+</div>
+
+<!-- Grid 2 (Videos) -->
+<div class="video" id="video-grid" style="display: none;">
+    <div class="box"><img src="./reels/reels-thumbnaill.png" onclick="togglePopup('popup-12')"></div>
+</div>
+
+
+	<div class="bottom">
+		<div class="home"><img src="./icons/home.png" height="40"></div>
+		<div class="search"><img src="./icons/search.png" height="40"></div>
+		<div class="newposts"><img src="./icons/more.png" height="40"></div>
+		<div class="video"><img src="./icons/video.png" height="40"></div>
+		<div class="user"><img src="./gallery/profile.png" height="40"></div>
+	</div>
+	</div>
+	<!-------------------------Pop up Messages Contents------------------------------->
+	<!-------------------------Pop up Introduction------------------------------->
+	<div class="popup active" id="popup-11">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<p class="notice">🎉 Welcome to Divinstagram! 🎉</span></p>
+					<div class="close-button" onclick="togglePopup('popup-11')">&times;</div>
+				</div>
+				<div class="body">
+					<p>This special corner of the web was made just for your birthday! 💖
+					Feel free to explore everything on this page, each section holds a little surprise, just for you. ✨<br>
+					Here’s what you can click on:<br><br>
+
+					- Posts 
+					<br>
+					- Highlights<br><br>
+
+					Enjoy every bit, and happy birthday! 🎂💫
+					</p>
+				</div>
+				<div class="bottom2">
+					<div class="home"><img src="./icons/heart.png" height="25"></div>
+					<div class="search"><img src="./icons/chat.png" height="25"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------------------Pop up Message 2------------------------------->
+	<div class="popup" id="popup-2">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp2"><img src="./gallery/Ate Nanet-pfp.jpg"></div>
+						<p>Ate Nanet</p>
+					<div class="close-button" onclick="togglePopup('popup-2')">&times;</div>
+				</div>
+
+					<div class="body">
+                		<h1>Dearest Binang,</h1>
+                		<p>Happiest Birthday to our one and only youngest sister, the sweetest, smartest, bravest, clingy, thoughtful, caring, and loving bunso. I miss you so much Dae. I can't even remember how many years natang LDR but who's counting? I know magkita ta soon and I'm always looking forward to that day. I am certain nga gimingaw pud ka namo tanan, know that all of us miss you too. Tiis tiis salang diha bayn, mag uban rata tanan puhon. We will make it happen, puhon. Just promise me that you will take care of yourself while we're away. U don't have to do extra things just to make us proud kay proud nami daan nimo always. Mao rajud na hangyo nako nimo, please take care of yourself. Happy Birthday Vine. I love u!! You're always on my prayer. 🫶💓</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------------------Pop up Message 3------------------------------->
+	<div class="popup" id="popup-3">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp3"><img src="./gallery/cly-pfp.png"></div>
+						<p>Cly</p>
+					<div class="close-button" onclick="togglePopup('popup-3')">&times;</div>
+				</div>
+
+					<div class="body">
+                		<h1>To my dearest DM,</h1>
+                		<p>Happy birthday, Debayn!!!🥳 Of course, di mawala ni nga greeting basta may conversation 'ta: Kamusta ka, dae? <br><br>
+
+						As your ka-LDR since high school😔, I greatly appreciate how our bond stayed timeless. Mao na nga susama sa atong pagka-strong, I pray for your wellness all the time. Bisan unsa ang mahitabo, padayon lang! 🍀<br><br>
+
+						Let us celebrate how you got this far🌟 I am very proud sa imong achievements beb💗 should you feel the urge to breakdown, naa ko diri as an outlet😊 and ang uban na nagpalangga sa imo. See you sometime, Divina. I love you!! 💞<br><br> 
+
+						I know dili na ako ang number 1 sa imong heart pero ikaw gihapon number 1 sa akong heart ah😇🫶</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------------------Pop up Message 4------------------------------>
+	<div class="popup" id="popup-4">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp4"><img src="./gallery/tj-pfp.png"></div>
+						<p>TJ</p>
+					<div class="close-button" onclick="togglePopup('popup-4')">&times;</div>
+				</div>
+
+					<div class="body">
+						<h1>Happiest Birthday Debayn!</h1>
+                		<p>Have a great day~ I hope 19 treats you well, always know that I'm here for you and I love you always. I miss our laags, uwi ka na soon!!!<br><br>
+
+						I've known you for 6 years, and I'm glad to be part of those 6 years of your life. Your presence is a gift because you light up the world of those that surrounds you. Ang kahoy debayn tong ga write tag names sa central kay buhi gihapon HAHAHAH makamingaw. Thank you for being there for me when everyone turned their back on me, you were my light on my darkest days and I'm very lucky to have you as my friend. God knows how much you saved me during Grade 6 when I was so down and the only thing that kept me going was distractions and false confidence and jollity. You were the one that helped distract myself and pulled me out of those dark times. So always know that I'm always here for you as you did the same to me. <33<br><br>
+
+						You are such a gift to us, your friends that Im glad to know that you have someone to take care of you sad!Again, happiest birthday debaynn!!!
+                		</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-------------------------Pop up Message 5------------------------------>
+	<div class="popup" id="popup-5">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp5"><img src="./gallery/Injel-pfp.png"></div>
+						<p>Injel</p>
+					<div class="close-button" onclick="togglePopup('popup-5')">&times;</div>
+				</div>
+
+					<div class="body">
+                		<p>Hi dibaynnn I know you're tired na sa lahat ng ganap sayo pero I'm very proud of you kasi nagagawa mo pa rin ipakita yang smile mo na nakakahawa, yang tawa mong makulit HAHAHAH. I miss the old days, yung tipong lagi kitang nakakasama, nakakasabay, nakakausap sa personal, nakaka bonding at kulitan, ngayon kasi same campus nga tayo pero ang dalang lang natin magkasama ☹️. Ang OA HAHAHAHA so eto na nga, I know na mahirap yang pinagdadaanan mo lalo na sa acads pero wag ka mag give-up haaa, we/you have goals and dreams in life kaya walang hihinto, okay?? Pray lang and focus sa goals!! Be healthy rin, wag ka magpapalipas ng gutom juusko ka! Andito lang ako palagi ahhh mag chat ka lang sa akin kapag mabigat na yang nararamdaman mo, we may not be real cousin pero yun na rin turing ko sayo, may pinsan/kaibigan/kapatid na rin ako, kahit theory lang natin na mag pinsan tayo ganun na talaga iniisip ko HAHAHAH. Always remember, you have me ha, love youuu!! <br> <br> <br>
+
+
+
+						Hayss kamiss naman yung SHS life. Sobrang tagal na ng pic na toh huhu T^T</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+			</div>
+		</div>
+	</div>
+
+	<!-------------------------Pop up Message 6------------------------------>
+	<div class="popup" id="popup-6">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp6"><img src="./gallery/Mirae_ee__-pfp.png"></div>
+						<p>Mirae_ee__</p>
+					<div class="close-button" onclick="togglePopup('popup-6')">&times;</div>
+				</div>
+
+					<div class="body">
+                		<p>Hi, Merr! HappyHappyBirthdayy <33 I bet hindi mo inexpect na kasama ako rito noh, ganiyan ka eh. Char! Kidding aside, we're all rooting for you. Hindi man tayo nag-uusap na as much dahil sa lintik na college life but we know na kaya mo 'yan. Si divina na 'yan eh. Pag 'di kaya gawin mo na lang mga stone lahat ng professor mo HHAHAHHA (Nakakamiss yung roleplay mo as medusa, nasa iyo pa kaya yung gawa nating crown?) Anyway, please enjoy your day and take care of yourself palagi. I'm one chat away if you need someone to talk to. Happy Birthday ulit, I miss you! ♡</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-------------------------Pop up Message 7------------------------------>
+	<div class="popup" id="popup-7">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp7"><img src="./gallery/Mawi_zel-pfp.png"></div>
+						<p>Mawi_zel</p>
+					<div class="close-button" onclick="togglePopup('popup-7')">&times;</div>
+				</div>
+
+					<div class="body">
+                		<p>Hi Divina! I miss you so much, miss ko pagka kalog mo HAHAHAHAHAHA. Ayon, goodluck sa journey and sa course na kinuha mo. I will always believe in you and alam kong talaga kayang kaya mo yan pero syempre mauuna yung reklamo bago gawa. 
+                		</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-------------------------Pop up Message 9------------------------------>
+	<div class="popup" id="popup-9">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp9"><img src="./gallery/diana-pfp.jpg"></div>
+						<p>Dayana</p>
+					<div class="close-button" onclick="togglePopup('popup-9')">&times;</div>
+				</div>
+
+					<div class="body">
+                		<p>Hi Divine mercy taners haha I miss you so much!!, I honestly don’t know what I’d do without you hirap magcollege kapag hindi ikaw ang kasama te wala akong taga translate, eme. You’re more than a best friend you’re family, yes naman. I’m so grateful for every moment, every laugh, every deep convo, and every crazy adventure we’ve had together. I miss everything about you lalo na sa research haha. Love you kulot<br><br>
+
+						Happy birthday my love love na kulot, miss your voice so muchhhhie!!!!
+	
+                		</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+				</div>
+			</div>
+		</div>
+
+	<!-------------------------Pop up Message 10------------------------------>
+	<div class="popup" id="popup-10">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<div class="popup-pfp10"><img src="./gallery/lei-pfp.jpg"></div>
+						<p>Lei</p>
+					<div class="close-button" onclick="togglePopup('popup-10')">&times;</div>
+				</div>
+
+					<div class="body"> 
+						<h1>Dear Vi,</h1>
+                		<p>Happy Birthday to my future partner, Divina Merci C. Tanoy. Minention ko na since minention mo 'yan sa birthday message mo sa'kin last year and kasi trip ko lang. I know you're so tired na gaya ng minention mo sa'kin last time. But I'd like to tell you lang din na kaya mo 'yan! Don't lose hope no matter what happen. Tandaan mo ito na yung chance mo para makuha yung dream career mo. I'm always proud and here to support you. Lalo na yung family and yung mga taong malalapit sa'yo. This is just a challenge. On top of that, this is the last year before we turn 20 so as much you can, make the best out of it, 'wag magpakababad sa acads, let yourself breathe din. Hayaan mo, kapag nakakuha na ako ng license forda trip na unwind kahit papano, just like sa mga lagi na'tin na papag-usapan. I want both of us in the future to sit by each other in our own house with the family we built together, having a talk and tell to them about how we experiences of how we reach our dreams together. So please, don't give up on me. I'll always be your TOP and one of your NUMBER 1 SUPPORTER. <br><br>
+
+						Na sabi ko na 'to dati but 'wag mo kakalimutan na andito ako para tulungan ka sa acads, as much as I can, ready akong aralin yung mga lesson niyo at indtihin kung alam kong makakatulong sa'yo yung ganun. I'll always make time for you! Despite the challenges we face, be it ono ur own or together, I'd stay to give support and help.<br><br>
+
+						You're smile gives comfort and I will always make sure that you always have that and I'll protect it. There's so many path that could led me to various stuffs. But somehow fate took me here, right where I actually shoul belong and I will always be grateful for that. I will always prove and make that this path is the same path I am taking in the future.<br><br>
+
+						Once again, Happy BIrthday Vii^^ Enjoy your day and looking forward na makita mamaya kapag nagsimba us. Sana magustuhan mo yung mga gift(s) na prinepare ko for you, including this. I LOVE YOUUUU^^
+                		</p>
+            		</div>
+
+            		<div class="bottom2">
+            			<div class="home"><img src="./icons/heart.png" height="25"></div>
+						<div class="search"><img src="./icons/chat.png" height="25"></div>
+            		</div>
+				</div>
+			</div>
+		</div>
+	<!-------------------------Pop up Reels Contents------------------------------->
+	<!-------------------------Pop up Reels 1------------------------------->
+	<div class="popup" id="popup-12">
+		<div class="overlay">
+			<div class="content">
+				<div class="top">
+					<p class="notice">You'll be in my heart</span></p>
+					<div class="close-button" onclick="togglePopup('popup-12')">&times;</div>
+				</div>
+				<div class="body">
+					<video controls autoplay>
+						<source src="./reels/reels-vid.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="bottom2">
+					<div class="home"><img src="./icons/heart.png" height="25"></div>
+					<div class="search"><img src="./icons/chat.png" height="25"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div> <!-- Mobile Frame Closing-->
+
+</body>
+</html>+

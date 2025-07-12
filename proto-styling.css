@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    background-color: #8f8f8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobileframe {
+    width: 100%;
+    max-width: 375px;
+    height: 90vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow-y: auto;
+    position: relative;
+    margin: 0;
+}*/
+
+.topmenu {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.lock img, .downarrow img {
+    height: 15px;
+    cursor: pointer;
+}
+
+.rtopmenu {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.addicon {
+    cursor: pointer;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px; 
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    background-color: #aba9a9;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.align {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.align h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.align p {
+    font-size: 12px;
+}
+
+/* Bio Section */
+.bio {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Settings Section */
+.settings {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px; 
+}
+
+.editprofile, .shareprofile {
+    width: 45%;
+    height: 40px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.addfriend {
+    width: 40px;
+    height: 40px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Highlight Section */
+.highlight {
+    display: flex;
+    gap: 10px; 
+    padding: 10px;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.hg1 {
+    flex: 0 0 auto; 
+    width: 60px;
+    height: 60px;
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    border: 2px solid #2c2c2c;
+    cursor: pointer;
+}
+
+/* Post Navigation */
+.prt {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 0;
+}
+
+.grid, .reel, .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Image Grid */
+.allgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.box {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bottom Navigation */
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #ffffff;
+    position: sticky;
+    bottom: 0;
+}
+
+.bottom img {
+    height: 25px;
+}
+
+.user img {
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 425px) {
+    .mobileframe {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    /* Profile Section Adjustments */
+    .profile {
+        flex-direction: row; 
+        align-items: center;
+        padding: 10px;
+        gap: 10px; 
+    }
+
+    .image {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .align {
+        gap: 10px;     
+    }
+
+    .align h5 {
+        font-size: 14px; 
+    }
+
+    .align p {
+        font-size: 10px; 
+    }
+
+    /* Settings Section Adjustments */
+    .settings {
+        flex-direction: row; 
+        gap: 5px;
+    }
+
+    .editprofile, .shareprofile {
+        width: 40%; 
+        height: 35px;
+        font-size: 12px; 
+    }
+
+    .addfriend {
+        width: 35px; 
+        height: 35px;
+    }
+
+    /* Highlight Section Adjustments */
+    .highlight {
+        gap: 5px; 
+    }
+
+    .hg1 {
+        width: 50px; 
+        height: 50px;
+    }
+}
